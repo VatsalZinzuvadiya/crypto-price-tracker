@@ -15,13 +15,13 @@ const statsQuery = Joi.object({
     .required(),
 }).required();
 
-router.post('/stats', validator.query(statsQuery), fetchCryptoStats);
+router.get('/stats', validator.query(statsQuery), fetchCryptoStats);
 const deviationQuery = Joi.object({
   coin: Joi.string()
     .valid(...Object.values(cryptoCurrencies))
     .required(),
 }).required();
 
-router.post('/deviation', validator.query(deviationQuery), calculateDeviation);
+router.get('/deviation', validator.query(deviationQuery), calculateDeviation);
 
 module.exports = router;
