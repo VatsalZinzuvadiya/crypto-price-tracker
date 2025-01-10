@@ -1,7 +1,7 @@
 const cron = require('node-cron');
 const moment = require('moment');
 const logger = require('../utils/logger');
-const { saveCryptoData } = require('../helper/auth');
+const { saveCryptoData } = require('../helper/crypto');
 
 // Schedule the job to run every 2 hours
 cron.schedule('0 */2 * * *', async () => {

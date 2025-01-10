@@ -1,5 +1,5 @@
 const logger = require('logger');
-const authService = require('../service/auth');
+const authService = require('../service/crypto');
 
 const fetchCryptoStats = async (req, res) => {
   const { coin } = req.query;

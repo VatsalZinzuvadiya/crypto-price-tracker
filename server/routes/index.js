@@ -1,7 +1,7 @@
 const express = require('express');
 const { rateLimit } = require('express-rate-limit');
 const healthRoute = require('./health');
-const cryptoRoute = require('./auth');
+const cryptoRoute = require('./crypto');
 
 const nonAuthRouter = express.Router();
 

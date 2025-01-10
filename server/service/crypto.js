@@ -1,5 +1,5 @@
 const logger = require('logger');
-const { getCryptoPriceRecords, calculateStandardDeviation, getLatestCryptoData } = require('../helper/auth');
+const { getCryptoPriceRecords, calculateStandardDeviation, getLatestCryptoData } = require('../helper/crypto');
 const BadRequestError = require('../Exceptions/BadRequestError');
 
 const fetchCryptoStats = async (coin) => {

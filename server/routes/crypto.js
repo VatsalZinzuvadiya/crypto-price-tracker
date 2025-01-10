@@ -4,7 +4,7 @@ const validator = require('express-joi-validation').createValidator({});
 const {
   fetchCryptoStats,
   calculateDeviation,
-} = require('../controller/auth');
+} = require('../controller/crypto');
 const { cryptoCurrencies } = require('../../constants/enums');
 
 const router = express.Router();
